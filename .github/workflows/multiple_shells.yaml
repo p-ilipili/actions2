@@ -11,8 +11,10 @@ jobs:
     steps:
       - name: python commands
         run: |
-            python -c “import platform; print(platform.processor())”
-        shell: bash 
+          import platform
+          print(platform.processor())
+        shell: python commands
+>>>>>>> parent of 56891a3... mod main to master
   run-windows-command:
     runs-on: windows-latest
     needs: ["run-shell-command"]
